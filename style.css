@@ -1,0 +1,140 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Full width elements */
+.container > * {
+    width: 100%;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 5px;
+}
+
+/* Drag & Drop Area */
+#drop-area {
+    border: 2px dashed rgba(255,255,255,0.5);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#drop-area:hover {
+    background: rgba(255,255,255,0.1);
+    transform: scale(1.02);
+}
+
+#drop-area.dragover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* Drop text */
+#drop-area p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#drop-area span {
+    display: block;
+    margin: 8px 0;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Browse Button */
+#browseBtn {
+    background: white;
+    color: #333;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#browseBtn:hover {
+    background: #eee;
+}
+
+/* Preview */
+.preview-box img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Slider */
+input[type="range"] {
+    width: 100%;
+}
+
+/* Compress Button */
+button {
+    background: linear-gradient(45deg, #00c9ff, #92fe9d);
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Download */
+#download {
+    display: none;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#download:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* Text */
+p {
+    font-size: 14px;
+}

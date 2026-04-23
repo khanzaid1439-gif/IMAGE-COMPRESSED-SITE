@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Image Compressor</h1>
+
+    <!-- Drag & Drop Area -->
+    <div id="drop-area">
+        <p>Drag & Drop Image Here</p>
+        <span>or</span>
+        <button id="browseBtn" type="button">Browse File</button>
+
+        <!-- IMPORTANT: keep only ONE input -->
+ 
+    </div>
+
+    <!-- Preview -->
+    <div class="preview-box">
+        <img id="preview" alt="Preview will appear here">
+    </div>
+
+    <!-- Quality -->
+    <label for="quality">Quality: </label>
+    <input type="range" id="quality" min="0.1" max="1" step="0.1" value="0.6">
+
+    <!-- Size Info -->
+    <p id="originalSize"></p>
+    <p id="compressedSize"></p>
+
+    <!-- Compress Button -->
+    <button onclick="compressImage()">Compress</button>
+
+    <!-- Download -->
+    <a id="download"></a>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/compressorjs/1.2.1/compressor.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
